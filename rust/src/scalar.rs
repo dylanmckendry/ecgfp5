@@ -2,7 +2,7 @@ use core::ops::{Add, AddAssign, Neg, Sub, SubAssign, Mul, MulAssign};
 
 /// A scalar (integer modulo the prime group order n).
 #[derive(Clone, Copy, Debug)]
-pub struct Scalar([u64; 5]);
+pub struct Scalar(pub [u64; 5]);
 
 impl Scalar {
 
